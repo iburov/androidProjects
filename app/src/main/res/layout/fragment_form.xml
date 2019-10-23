@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".FormFragment">
+
+    <TextView
+        android:id="@+id/carwashtext"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/car_wash_packages"
+        android:textColor="#F48804"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/discounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_info"
+        android:textColor="#787776"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/numberofwashesinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:layout_below="@id/discounttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroupWash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberofwashesinput"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radioexterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exterior"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/radiofull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full"
+            android:textSize="24sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioGroupWash"
+        android:width="300dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
